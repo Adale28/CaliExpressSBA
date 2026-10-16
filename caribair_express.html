@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CaribAir Express - Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f6f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #0c3c60;
+            color: white;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .logo-placeholder {
+            width: 50px;
+            height: 50px;
+            background-color: #ff9900;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: #0c3c60;
+        }
+        .company-name {
+            font-size: 1.8rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        nav {
+            background-color: #115180;
+            display: flex;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #ff9900;
+            color: #0c3c60;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        .section {
+            background: white;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            scroll-margin-top: 60px;
+        }
+        h2 {
+            color: #0c3c60;
+            border-bottom: 3px solid #ff9900;
+            padding-bottom: 8px;
+            margin-top: 0;
+        }
+        .alert-box {
+            background-color: #fff3cd;
+            border-left: 5px solid #ffc107;
+            color: #856404;
+            padding: 15px;
+            border-radius: 4px;
+            margin-top: 15px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #0c3c60;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .btn-link {
+            display: inline-block;
+            background-color: #ff9900;
+            color: #0c3c60;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            margin-top: 10px;
+            margin-right: 10px;
+            transition: background-color 0.3s;
+        }
+        .btn-link:hover {
+            background-color: #e08800;
+        }
+        footer {
+            background-color: #0c3c60;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-area">
+            <div class="logo-placeholder">CA</div>
+            <div class="company-name">CaribAir Express</div>
+        </div>
+        <div style="text-align: right; font-size: 0.9rem;">
+            <strong>Location:</strong> Piarco International Airport, Trinidad & Tobago<br>
+            <strong>Phone:</strong> +1 (868) 555-0199 | <strong>Email:</strong> contact@caribairexpress.com
+        </div>
+    </header>
+
+    <nav>
+        <a href="#updates">Fuel Updates</a>
+        <a href="#surcharge">Surcharge Policy</a>
+        <a href="#tips">Travel Tips</a>
+        <a href="#links">External Links</a>
+    </nav>
+
+    <div class="container">
+
+        <!-- Fuel Price Impacts Section -->
+        <section id="updates" class="section">
+            <h2>Current Updates: Fuel-Price Impacts</h2>
+            <p>Global aviation fuel prices continue to show significant volatility. CaribAir Express is actively monitoring these shifts to ensure we balance operational stability with fair customer pricing. Due to a recent 12% rise in regional jet fuel costs, operational expenses have increased across our short-haul Caribbean networks.</p>
+            <div class="alert-box">
+                <strong>Notice to Passengers:</strong> To offset these unexpected cost surges without compromising flight frequency, minor adjustments have been implemented into our regional route pricing matrices effective this month.
+            </div>
+        </section>
+
+        <!-- Surcharge Policy Section -->
+        <section id="surcharge" class="section">
+            <h2>Surcharge Policy</h2>
+            <p>Our fuel and security surcharge breakdown is determined by flight distance categories. These metrics are dynamically mapped directly from our primary scheduling and financial spreadsheets:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Flight Distance / Route Category</th>
+                        <th>Fuel Surcharge (USD)</th>
+                        <th>Security Surcharge (USD)</th>
+                        <th>Total Surcharge (USD)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Domestic & Island-Hops (Under 150 miles)</td>
+                        <td>$15.00</td>
+                        <td>$5.00</td>
+                        <td>$20.00</td>
+                    </tr>
+                    <tr>
+                        <td>Regional Routes (151 - 500 miles)</td>
+                        <td>$35.00</td>
+                        <td>$7.50</td>
+                        <td>$42.50</td>
+                    </tr>
+                    <tr>
+                        <td>International Routes (Over 500 miles)</td>
+                        <td>$60.00</td>
+                        <td>$12.00</td>
+                        <td>$72.00</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p><small>*Surcharges are calculated per ticket segment and applied automatically during checkout.</small></p>
+        </section>
+
+        <!-- Tips for Reducing Travel Costs Section -->
+        <section id="tips" class="section">
+            <h2>Tips for Reducing Travel Costs</h2>
+            <p>Maximize your savings when flying across the islands with our top budget-friendly travel practices:</p>
+            <ul>
+                <li><strong>Book Directly Online:</strong> Save on third-party broker fees by utilizing our web portal to secure lower web-only promo fares.</li>
+                <li><strong>Travel Mid-Week:</strong> Mid-week departures (Tuesdays and Wednesdays) typically feature significantly lower seat pricing than weekend flights.</li>
+                <li><strong>Pack Efficiently:</strong> Avoid checking multiple bags. Utilize a single, standard carry-on bag within weight thresholds to bypass excess baggage fees.</li>
+                <li><strong>Join Frequent Flyer Programs:</strong> Accumulate travel miles on every segment to unlock free seat upgrades, priority check-in, and complimentary bag allowances.</li>
+            </ul>
+        </section>
+
+        <!-- Useful External Links Section -->
+        <section id="links" class="section">
+            <h2>Official Links & Inquiries</h2>
+            <p>Need to connect with our support agents or stay informed on regional global aviation frameworks? Select an option below:</p>
+            <a href="mailto:contact@caribairexpress.com" class="btn-link">📧 Email CaribAir Express</a>
+            <a href="https://www.aviation24.be" target="_blank" class="btn-link">✈️ Visit Aviation24 News</a>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 CaribAir Express. All Rights Reserved. | CSEC Information Technology SBA Resource</p>
+    </footer>
+
+</body>
+</html>
